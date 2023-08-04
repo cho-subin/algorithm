@@ -13,3 +13,5 @@
 2.Pop(맨뒤에 원소 추출) - O(1)<br>
 3.top(맨위의 요소 확인) - O(1)<br>
 .empty(비어있는지 확인) - O(1)<br>
+
+문제1. 키로거 https://www.acmicpc.net/problem/5397
