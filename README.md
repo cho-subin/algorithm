@@ -27,4 +27,3 @@ JS에서는 Dictionary 자료형을 이용하면 큐를 쉽게 구현할 수 있
 js의 Set 객체는 중복되지 않은 고유한 값을 저장하기 때문에 순서가 중요하지 않고 중복된 값은 허용하지 않는다.<br>
 
 문제1. 폰켓몬 https://school.programmers.co.kr/learn/courses/30/lessons/1845
-문제1. 폰켓몬 https://school.programmers.co.kr/learn/courses/30/lessons/1845
