@@ -6,9 +6,7 @@ function solution(d, budget) {
     for(let i=0; i<dArr.length; i++){
         let test = sum+=dArr[i]
         if(test>budget) break;
-        // if(test<=budget) {
         count++;
-        // }
     }
     
     return count;
