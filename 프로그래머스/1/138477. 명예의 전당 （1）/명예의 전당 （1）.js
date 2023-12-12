@@ -1,16 +1,21 @@
 function solution(k, score) {
-    const honor = []
-    const result = []
-    for(let i = 0 ; i < score.length ; i ++) {
-        if(i < k) {
-            honor.push(score[i])
+    var answer = [];
+    let arr = [];
+    
+    for(s of score){
+        if(arr.length < k){
+            arr.push(s);
+            arr.sort((a,b)=>a-b);
         }
-        if(score[i]>Math.min(...honor)) {
-            honor.pop()
-            honor.push(score[i])
-            honor.sort((a,b) => b-a)
+        else if(s>=Math.min(...arr)){
+            arr.push(s);
+            arr.sort((a,b)=>a-b);
+            arr.shift();
         }
-        result.push(honor.at(-1))
+        else if(s<Math.min(...arr)){
+            arr.sort((a,b)=>a-b);
+        }
+        answer.push(arr[0])
     }
-    return result
+    return answer;
 }
